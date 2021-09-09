@@ -17,7 +17,7 @@ export const NewTaskComponent = ({ saveTaskName }: Props) => {
     const itemNameLength = itemNameOnChang.length;
     if (itemNameLength > 25) alert("Can not be more than 25 characters.");
     else if (itemNameOnChang !== "") saveTaskName(itemNameOnChang);
-    else if (itemNameOnChang == "") alert("Can not be empty.");
+    else if (itemNameOnChang === "") alert("Can not be empty.");
   };
 
   return (

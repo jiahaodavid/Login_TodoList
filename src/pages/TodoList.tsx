@@ -31,7 +31,7 @@ export const TodoList: FC = () => {
   const searchTask = (): void => {
     setTodoList(
       todoList.filter((task) => {
-        return task.taskName == searchOnChange;
+        return task.taskName === searchOnChange;
       })
     );
   };
@@ -39,7 +39,7 @@ export const TodoList: FC = () => {
   const delTask = (taskNameToDelete: string): void => {
     setTodoList(
       todoList.filter((task) => {
-        return task.taskName != taskNameToDelete;
+        return task.taskName !== taskNameToDelete;
       })
     );
   };
@@ -47,7 +47,7 @@ export const TodoList: FC = () => {
   const editTask = (taskNameToEdit: string, editedName: string): void => {
     const newTask = { taskName: editedName };
     const newTodoList = todoList.filter((task) => {
-      return task.taskName != taskNameToEdit;
+      return task.taskName !== taskNameToEdit;
     });
     setTodoList([...newTodoList, newTask]);
   };
