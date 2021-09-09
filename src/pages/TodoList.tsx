@@ -13,6 +13,7 @@ export const TodoList: FC = () => {
   const [isNewButton, setIsNewButton] = useState<boolean>(true);
   const history = useHistory();
 
+  /* eslint-disable */
   useEffect(() => {
     if (!isNewButton) {
       setTodoListForSearch(todoList);

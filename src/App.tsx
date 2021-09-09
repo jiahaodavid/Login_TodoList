@@ -4,7 +4,7 @@ import { Redirect } from "react-router-dom";
 
 /* eslint-disable */
 const axios = require('axios')
-/* eslint-disable */
+
 
 const App: FC = () => {
   const [email, setEmail] = useState<string>('')
